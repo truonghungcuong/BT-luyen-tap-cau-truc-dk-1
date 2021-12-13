@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<input id="sothunhat" type="text" placeholder="Nhập số">
+<input id="sothuhai" type="text" placeholder="Nhập số">
+<input id="sothuba" type="text" placeholder="Nhập số">
+<button onclick="kiemtra()">Kiểm tra</button>
+<p id="ketqua"></p>
+<script>
+    function kiemtra(){
+        let a= parseInt(document.getElementById("sothunhat").value);
+        let b= parseInt(document.getElementById("sothuhai").value);
+        let c= parseInt(document.getElementById("sothuba").value);
+        if (a>b && a>c){
+            document.getElementById("ketqua").innerHTML=a+" là số lớn nhất";
+        }else if (b>a && b>c){
+            document.getElementById("ketqua").innerHTML=b+" là số lớn nhất";
+        }else{
+            document.getElementById("ketqua").innerHTML=c+" là số lớn nhất";
+        }
+    }
+</script>
+</body>
+</html>
