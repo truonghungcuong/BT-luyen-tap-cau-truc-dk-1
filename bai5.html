@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<input id="diemkiemtra" type="text" placeholder="Điểm kiểm tra">
+<input id="diemgiuaki" type="text" placeholder="Điểm giữa kì">
+<input id="diemcuoiki" type="text" placeholder="Điểm cuối kì">
+<button onclick="kiemtra()">Kiểm tra</button>
+<p id="ketqua"></p>
+<script>
+    function kiemtra(){
+        let a = parseInt(document.getElementById("diemkiemtra").value);
+        let b = parseInt(document.getElementById("diemgiuaki").value);
+        let c = parseInt(document.getElementById("diemcuoiki").value);
+        let diemtrungbinh = (a+(b*2)+(c*3))/6;
+        if (diemtrungbinh >=8){
+            document.getElementById("ketqua").innerHTML= "Xếp hạng giỏi";
+        }else if (diemtrungbinh >= 6.5){
+            document.getElementById("ketqua").innerHTML= "Xếp hạng khá";
+        }else if (diemtrungbinh >=5){
+            document.getElementById("ketqua").innerHTML= "Xếp hạng trung bình";
+        }else {
+            document.getElementById("ketqua").innerHTML= "Xếp hạng yếu";
+        }
+    }
+</script>
+</body>
+</html>
