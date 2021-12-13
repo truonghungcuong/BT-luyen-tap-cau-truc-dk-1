@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 6</title>
+</head>
+<body>
+<input id="doanhso"type="text" placeholder="Doanh số bán hàng">
+<button onclick="kiemtra()">Kiểm tra</button>
+<p id="ketqua"></p>
+<script>
+    function kiemtra(){
+        let a = parseInt(document.getElementById("doanhso").value);
+        let b = a*2/100;
+        let c = a*5/100;
+        let d = a*(9/100);
+        if (a<=100000){
+            document.getElementById("ketqua").innerHTML= b;
+        }else if (a<=500000){
+            document.getElementById("ketqua").innerHTML= c;
+        }else if (a>500000){
+            document.getElementById("ketqua").innerHTML= d;
+        }
+    }
+</script>
+</body>
+</html>
