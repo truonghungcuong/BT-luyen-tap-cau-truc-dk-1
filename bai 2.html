@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<input id="nhaptuoi" type="text" placeholder="Nhập tuổi">
+<button onclick="kiemtra()">Kiểm tra</button>
+<p id="ketqua"></p>
+<script>
+    function kiemtra(){
+        let a= parseInt(document.getElementById("nhaptuoi").value);
+        if (a<16){
+            document.getElementById("ketqua").innerHTML="không đủ tuổi học lớp 10";
+        }
+    }
+</script>
+</body>
+</html>
