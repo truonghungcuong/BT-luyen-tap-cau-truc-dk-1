@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<input id="sothunhat" type="text" placeholder="Nhập số thứ nhất">
+<input id="sothuhai" type="text" placeholder="Nhập số thứ hai">
+<button onclick="ketqua()">Tính</button>
+<p id="dapan"></p>
+<script>
+    function ketqua(){
+        let a = parseInt(document.getElementById("sothunhat").value);
+        let b = parseInt(document.getElementById("sothuhai").value);
+        if (a%b===0){
+            document.getElementById("dapan").innerHTML="chia hết";
+        }else {
+            document.getElementById("dapan").innerHTML="không chia hết";
+        }
+    }
+</script>
+</body>
+</html>
