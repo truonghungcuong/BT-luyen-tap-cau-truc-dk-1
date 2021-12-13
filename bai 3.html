@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<input id="nhapso" type="text" placeholder="Nhập số">
+<button onclick="kiemtra()">Kiểm tra</button>
+<p id="ketqua"></p>
+<script>
+    function kiemtra(){
+        let a = parseInt(document.getElementById("nhapso").value);
+        if (a>0){
+            document.getElementById("ketqua").innerHTML= a +" lớn hơn 0";
+        }else {
+            document.getElementById("ketqua").innerHTML= a +" nhỏ hơn 0";
+        }
+    }
+</script>
+</body>
+</html>
