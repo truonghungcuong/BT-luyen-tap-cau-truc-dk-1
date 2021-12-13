@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+<input id="thoigiangoi" type="text" placeholder="Số phút gọi">
+<select id="cuocgoi">
+    <option value="1">Nội mạng</option>
+    <option value="2">Ngoại mạng</option>
+</select>
+<button onclick="kiemtra()">Kiểm tra</button>
+<p id="ketqua"></p>
+<script>
+    function kiemtra(){
+        let a = Math.round( parseInt(document.getElementById("thoigiangoi").value));
+        let cuoc = document.getElementById("cuocgoi").value;
+        let c = 1590*a;
+        let d = 1790*a;
+        if (cuoc=== "1"){
+            document.getElementById("ketqua").innerHTML= c;
+        }else{
+            document.getElementById("ketqua").innerHTML= d;
+        }
+    }
+</script>
+</body>
+</html>
